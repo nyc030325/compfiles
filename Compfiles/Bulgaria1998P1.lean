@@ -80,7 +80,7 @@ snip end
 
 determine solution_value : ℕ := 9
 
-problem bulgaria1998_p1 : IsLeast { m | all_colorings_are_good m } solution_value := by
+theorem bulgaria1998_p1 : IsLeast { m | all_colorings_are_good m } solution_value := by
   constructor
   · rw [Set.mem_setOf_eq]
     refine ⟨by norm_num, ?_⟩
